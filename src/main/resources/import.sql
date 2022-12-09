@@ -1,0 +1,9 @@
+INSERT INTO cliente (nombre,apellido,telefono) VALUES('ALEX','DIAZ','111111');
+INSERT INTO cliente (nombre,apellido,telefono) VALUES('ADRI','CORD','222222');
+INSERT INTO cliente (nombre,apellido,telefono) VALUES('ALEJ','PACH','333333');
+INSERT INTO cliente (nombre,apellido,telefono) VALUES('LUIS','DIAZ','444444');
+INSERT INTO cliente (nombre,apellido,telefono) VALUES('RORO','MONO','555555');
+INSERT INTO cliente (nombre,apellido,telefono) VALUES('MANU','ADRI','666666');
+INSERT INTO cliente (nombre,apellido,telefono) VALUES('CAMR','CHIQ','777777');
+INSERT INTO cliente (nombre,apellido,telefono) VALUES('JOSE','EGAS','888888');
+INSERT INTO cliente (nombre,apellido,telefono) VALUES('IGNA','FORN','999999');
