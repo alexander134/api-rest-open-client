@@ -12,10 +12,17 @@ Create a new empty project in Railway and start by creating a PostgreSQL databas
 a new project from GitHub. You can use the following environment variables based on the database you just created. 
 
 ```properties
-spring_profiles_active=prod
-PROD_DB_HOST=containers-us-west-166.railway.app
-PROD_DB_PORT=6973
-PROD_DB_NAME=railway
-PROD_DB_PASSWORD=GdZY9P2ZuCRNi3zLsZMW
-PROD_DB_USERNAME=postgres
+	spring_profiles_active=prod
+	PROD_DB_HOST=containers-us-west-168.railway.app
+	PROD_DB_PORT=7303
+	PROD_DB_NAME=railway
+	PROD_DB_PASSWORD=Nycb62Gq4KlYhhUBjmCR
+	PROD_DB_USERNAME=root
+	
+	MYSQLDATABASE=railway
+	MYSQLHOST=containers-us-west-168.railway.app
+	MYSQLPASSWORD=Nycb62Gq4KlYhhUBjmCR
+	MYSQLPORT=7303
+	MYSQLUSER=root
+	
 ```
