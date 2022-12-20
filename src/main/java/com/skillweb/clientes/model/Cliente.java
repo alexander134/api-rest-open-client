@@ -23,15 +23,15 @@ public class Cliente {
 	
 	@PersistenceCreator
 	@JsonCreator
-	public Cliente(Long identificador, String nombre, String apellido, String telefono) {
+	/*public Cliente(Long identificador, String nombre, String apellido, String telefono) {
 		super();
 		this.identificador = identificador;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.telefono = telefono;
-	}
+	}*/
 	
-	//public Cliente(){}
+	public Cliente(){}
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
