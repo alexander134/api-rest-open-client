@@ -38,6 +38,7 @@ public class Cliente {
 	private Long identificador;
 	private String nombre;
 	private String apellido;
+	
 	private String telefono;
 	public Long getIdentificador() {
 		return identificador;
