@@ -1,19 +1,19 @@
 # api-rest-open-client
 
+Creé un nuevo proyecto desde 0 en SpringBoot desplegado en Railway y comience creando una base de datos PostgreSQL y Mysql. con varables de entorno fijas en Railway
+para economizar recurso las las tablas de las bases luego de unos min del despliegue son borradas 
+
 https://documenter.getpostman.com/view/4963699/2s8YzS1j99
 
-<a href="https://api-rest-open-client-production.up.railway.app/cliente/todosclientes"> Todos los Clientes</a>
+<a href="https://api-rest-open-client-production.up.railway.app/cliente/todosclientes" target="_blank"> Todos los Clientes</a>
 
-<a href="https://api-rest-open-client-production.up.railway.app/cliente/3">cliente 3</a>
+<a href="https://api-rest-open-client-production.up.railway.app/cliente/3" target="_blank">cliente 3</a>
 
 
 ### Railway
 
-Bring your code, we'll handle the rest. Made for any language, for projects big and small. [Railway](https://railway.app/) 
-is the cloud that takes the complexity out of shipping software.
 
-Create a new empty project in Railway and start by creating a PostgreSQL database. Once you have that created you can create
-a new project from GitHub. You can use the following environment variables based on the database you just created. 
+
 
 ```properties
 	spring_profiles_active=prod
