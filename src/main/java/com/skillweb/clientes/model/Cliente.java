@@ -6,9 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.data.annotation.PersistenceCreator;
+//import org.springframework.data.annotation.PersistenceCreator;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
+//import com.fasterxml.jackson.annotation.JsonCreator;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,8 +21,8 @@ import lombok.Data;
 @Table(name="cliente")
 public class Cliente {
 	
-	@PersistenceCreator
-	@JsonCreator
+	//@PersistenceCreator
+	//@JsonCreator
 	/*public Cliente(Long identificador, String nombre, String apellido, String telefono) {
 		super();
 		this.identificador = identificador;
