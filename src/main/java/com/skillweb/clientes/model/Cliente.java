@@ -31,7 +31,7 @@ public class Cliente {
 		this.telefono = telefono;
 	}*/
 	
-	public Cliente(){}
+	//public Cliente(){}
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
