@@ -35,10 +35,10 @@ public class ClienteController {
 		return new ResponseEntity<>(response,HttpStatus.OK);
 	}
 	
-	@GetMapping("/{id}")
-	private ResponseEntity<?> getClienteById(@PathVariable Long id){
+	@GetMapping("/{ident}")
+	private ResponseEntity<?> getClienteById(@PathVariable Long ident){
 		response.clear();
-		response.put("cliente", clienteService.getClienteById(id));
+		response.put("cliente", clienteService.getClienteById(ident));
 		return new ResponseEntity<>(response,HttpStatus.OK);
 	}
 	
@@ -51,18 +51,18 @@ public class ClienteController {
 		
 	}
 	
-	@PutMapping("/{id}")
-	private  ResponseEntity<?> updCliente(@PathVariable Long id,@RequestBody Cliente cliente){
+	@PutMapping("/{ident}")
+	private  ResponseEntity<?> updCliente(@PathVariable Long ident,@RequestBody Cliente cliente){
 		response.clear();
-		clienteService.actCliente(id,cliente);
+		clienteService.actCliente(ident,cliente);
 		response.put("message", "upd cliente successfully");
 		return new ResponseEntity<>(response,HttpStatus.ACCEPTED);
 	}
 	
-	@DeleteMapping("/{id}")
-	private ResponseEntity<?> deleteClienteById(@PathVariable Long id){
+	@DeleteMapping("/{ident}")
+	private ResponseEntity<?> deleteClienteById(@PathVariable Long ident){
 		response.clear();
-		clienteService.eliCliente(id);
+		clienteService.eliCliente(ident);
 		response.put("message", "delete cliente successfully");
 		return new ResponseEntity<>(response,HttpStatus.ACCEPTED);
 	}

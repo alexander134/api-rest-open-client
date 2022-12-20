@@ -17,9 +17,9 @@ public class ClienteServiceImpl implements ClienteService{
 	private ClienteRepository clienteRepositore;
 
 	@Override
-	public Cliente getClienteById(Long id) {
+	public Cliente getClienteById(Long ident) {
 		// TODO Auto-generated method stub
-		return clienteRepositore.findById(id).orElse(null);
+		return clienteRepositore.findById(ident).orElse(null);
 	}
 
 	@Override
@@ -35,13 +35,13 @@ public class ClienteServiceImpl implements ClienteService{
 	}
 
 	@Override
-	public void actCliente(Long id, Cliente cliente) {
+	public void actCliente(Long ident, Cliente cliente) {
 		// TODO Auto-generated method stub
 		/*Cliente cliente1 = clienteRepositore.findById(id).orElse(cliente);
 		if(cliente1==null){
 			//new Exception("no found cliente");
 		}*/
-		Cliente cliente2 = clienteRepositore.findById(id).orElseThrow(
+		Cliente cliente2 = clienteRepositore.findById(ident).orElseThrow(
 				()->new NoSuchElementException("no")
 				);
 		cliente2.setNombre(cliente.getNombre());
@@ -51,9 +51,9 @@ public class ClienteServiceImpl implements ClienteService{
 	}
 
 	@Override
-	public void eliCliente(Long id) {
+	public void eliCliente(Long ident) {
 		// TODO Auto-generated method stub
-		clienteRepositore.deleteById(id);
+		clienteRepositore.deleteById(ident);
 	}
 	
 

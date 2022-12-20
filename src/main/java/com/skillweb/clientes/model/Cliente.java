@@ -17,15 +17,15 @@ public class Cliente {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long identificador;
 	private String nombre;
 	private String apellido;
 	private String telefono;
-	public Long getId() {
-		return id;
+	public Long getIdentificador() {
+		return identificador;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setIdentificador(Long identificador) {
+		this.identificador = identificador;
 	}
 	public String getNombre() {
 		return nombre;
